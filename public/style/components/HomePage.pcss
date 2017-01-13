@@ -1,0 +1,33 @@
+@import '../base/global-theme.pcss';
+
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  background: var(--background-color);
+  min-width: 100vw;
+  min-height: calc(100vh - 50px);
+}
+
+@custom-media --min-screen (width >= 200px) and (width <= 1000px);
+
+@media (--min-screen) {
+  .home-page-Carousel-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    height: calc(100vh - 50px);
+    min-width: 100%;
+  }
+
+  .home-page-Carousel-container p {
+    color: white;
+  }
+
+  .home-page-Carousel-container img {
+    height: 40px;
+  }
+}
+
+

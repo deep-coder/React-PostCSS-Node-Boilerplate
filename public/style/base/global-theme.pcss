@@ -1,0 +1,24 @@
+/* Removing autofill chrome option color*/
+:root {
+    --background-color: rgba(200, 57, 101, .9);
+
+}
+
+:root {
+    --button-style:{
+        border: 1px solid green;
+        background-color: transparent;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+    -webkit-transition-delay: 9999s;
+}
