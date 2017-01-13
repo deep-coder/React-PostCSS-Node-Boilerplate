@@ -1,4 +1,4 @@
-React Redux Blog App.
+React PostCSS Node Initial Boilerplate.
 
 
 
